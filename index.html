@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Binary Search Visualizer</title>
+    <style>
+      body {
+        background: #ffffff;
+        color: #000000;
+        font-family: Arial;
+        text-align: center;
+      }
+      
+
+      canvas {
+        background: #071026;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+      }
+   
+    </style>
+  </head>
+  <body>
+    <h2>Binary Search Visualizer</h2>
+
+    <div class="panel">
+      <label>Target:</label>
+      <input type="number" id="target" value="25" style="width: 80px" />
+      <button id="mulai">Mulai Pencarian</button>
+      <button id="acak">Acak Data</button>
+    </div>
+
+    <canvas id="canvas1" width="900" height="380"></canvas>
+    <div id="numbers"></div>
+    <p id="status">Masukkan angka target, lalu klik "Mulai Pencarian".</p>
+
+    <script src="canvasarray.js"></script>
+    <script src="logikabinarysearch.js"></script>
+  </body>
+</html>
