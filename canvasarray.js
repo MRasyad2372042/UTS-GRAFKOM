@@ -4,6 +4,10 @@ var ctx = cnv.getContext("2d");
 var imageDataA = ctx.getImageData(0, 0, cnv.width, cnv.height);
 var W = cnv.width, H = cnv.height;
 
+var arr = [];
+var sedang_berjalan = false;
+var delay = 600;
+
 // === FUNGSI DASAR ===
 function gambar_titik(imageDataA, x, y, r, g, b) {
     var index = 4 * (Math.round(x) + Math.round(y) * W);
